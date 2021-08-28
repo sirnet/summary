@@ -1,0 +1,330 @@
+:root {
+    --left-block: #292929;
+    --fon: #afaba7;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;400&display=swap');
+
+body {
+    background-color: var(--fon);
+    width: 100%;
+    height: 100%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.visual-hiden {
+    padding: 0;
+    margin: 0;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background: #ffffff;
+    display: flex;
+    width: 800px;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.left-block {
+    background: var(--left-block);
+    width: 250px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-block svg {
+    fill: #ffffff;
+    height: 30px;
+    width: 30px;
+    padding-right: 10px;
+}
+
+.left-block img {
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+
+.info-title {
+    margin-top: 30px;
+    position: relative;
+}
+
+.info-title::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid #ffffff;
+    padding-top: 10px;
+    width: 220px;
+    position: absolute;
+}
+
+.info-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-text span {
+    font-weight: 200;
+    font-style: italic;
+    font-size: 12px;
+    color: rgb(148, 148, 148);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(148, 148, 148);
+}
+
+.interesting {
+    height: 300px;
+}
+
+.interesting, .info, .social {
+    width: 180px;
+}
+
+.intersting-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.interesting-item {
+    padding-top: 15px;
+    width: 50px;
+    flex-direction: column;
+}
+
+.interesting-item svg {
+     padding: 0;
+}
+
+.interesting-item span {
+    padding-top: 8px;
+    font-size: 12px;
+}
+
+.right-block {
+    width: 550px;
+}
+
+.main-title {
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-size: 42px;
+    letter-spacing: 5px;
+    margin-bottom: 0;
+    font-weight: 100;
+}
+
+.main-descr {
+    margin-left: 50px;
+    text-transform: uppercase;
+    margin-top: 0;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+
+.main-header__block {
+    margin-bottom: 100px;
+}
+
+.work-exper {
+    display: flex;
+    margin-left: 50px;
+}
+
+.work-left span {
+    display: flex;
+    border: 2px solid;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.work-left svg {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+}
+
+.work-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.work-left::after {
+    content: '';
+    margin-top: 5px;
+    margin-right: 10px;
+    height: 320px;
+    border-left: 2px solid;
+}
+
+.work-title {
+    padding: 0;
+    margin-top: 10px;
+    width: 400px;
+}
+
+.work-title::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid;
+    margin-top: 10px;
+}
+
+.work-list {
+    margin-left: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.work-item {
+    display: flex;
+}
+
+.work-desc {
+    position: relative;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    padding-right: 10px;
+    width: 68px;
+}
+
+.work-block {
+    width: 350px;
+    font-size: 14px;
+}
+
+.work-text {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+}
+
+.work-text span {
+    font-weight: 200;
+}
+
+.work-info {
+    margin-top: 5px;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.work-desc::before {
+    content: '';
+    position: absolute;
+    display: block;
+    border: 5px solid;
+    border-radius: 50%;
+    left: -37px;
+}
+
+.education {
+    margin-top: 50px;
+}
+
+.education-left::after {
+    height: 60px;
+}
+
+.education .work-text {
+    padding-bottom: 10px;
+}
+
+.skills {
+    margin-top: 50px;
+}
+
+.skills .work-desc::before {
+    border: unset;
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.skills-block {
+    position: relative;
+    width: 80px;
+    border-bottom: 10px solid var(--fon);
+    margin-left: 10px;
+}
+
+.skills-item {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    padding-right: 30px;
+    font-size: 12px;
+}
+
+.skills-desc {
+    width: 80px;
+}
+
+.skills-block span {
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 10px;
+    background: var(--left-block);
+}
+
+.skills-item:nth-child(3) span {
+    width: 60px;
+}
+
+.skills-item:nth-child(6) span {
+    width: 50px;
+}
+
+.skills-item:nth-child(7) span {
+    width: 50px;
+}
+
+.skills-item:nth-child(8) span,
+.skills-item:nth-child(9) span {
+    width: 10px;
+}
+
+.skills .education-left::after {
+    height: 130px;
+}
