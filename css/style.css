@@ -100,6 +100,16 @@ a {
     color: rgb(148, 148, 148);
 }
 
+.social-item a {
+    transition: 1s;
+    color: rgb(148, 148, 148);
+}
+
+.social-item a:hover {
+    color: yellow;
+    font-size: 14px;
+}
+
 .interesting {
     height: 300px;
 }
@@ -209,7 +219,15 @@ a {
 }
 
 .work-item {
+    opacity: 0;
+    visibility: hidden;
     display: flex;
+}
+
+.work-item--active {
+    visibility: visible;
+    opacity: 1;
+    transition: 2s;
 }
 
 .work-desc {
