@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     let workItem = document.querySelectorAll('.work-item');
     let i = 0;
-    const workInterval = setInterval(startMetod, 2000);
+    const workInterval = setInterval(startMetod, 1000);
    
     function startMetod() {
         workItem[i].classList.add('work-item--active');
