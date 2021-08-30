@@ -3,9 +3,12 @@
 window.addEventListener('DOMContentLoaded', () => {
 
     let workItem = document.querySelectorAll('.work-item');
-    let i = 0;
     const workInterval = setInterval(startMetod, 1000);
-   
+    const menuList = document.querySelector('.menu');
+    const leftBlock = document.querySelector('.left-block');
+    
+    let i = 0;
+
     function startMetod() {
         workItem[i].classList.add('work-item--active');
         i+=1;
@@ -13,5 +16,20 @@ window.addEventListener('DOMContentLoaded', () => {
             clearInterval(workInterval);
         }
     }
+
+    menuList.addEventListener('click', () => {
+        if(menuList.classList.contains('menu--active')){
+            menuList.classList.remove('menu--active');
+        }else {
+            menuList.classList.add('menu--active');
+        }
+        if(leftBlock.classList.contains('left-block--active')){
+            leftBlock.classList.remove('left-block--active');
+        }else {
+            leftBlock.classList.add('left-block--active');
+        }
+    });
+
+    
     
 });

@@ -12,6 +12,8 @@ body {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: 400;
     font-size: 16px;
+    padding: 0;
+    margin: 0;
 }
 
 .visual-hiden {
@@ -346,3 +348,108 @@ a {
 .skills .education-left::after {
     height: 130px;
 }
+
+@media (min-width:320px) and (max-width:425px) {
+    .left-block {
+        position: absolute;
+        top: 0;
+        left: -1000px;
+        transition: 1.5s;
+    }
+
+    .right-block {
+        width: auto;
+    }
+
+    .container {
+        width: auto;
+        margin: 10px;
+        position: relative;
+    }
+
+    .work-right, .work-title {
+        width: 240px;
+    }
+
+    .work-exper{
+        margin-left: 5px;
+    }
+
+    .work-left::after {
+        height: 440px;
+    }
+
+    .education .work-left {
+        height: 140px;
+    }
+
+    .skills .work-left::after{
+        height: 230px;
+    }
+
+    .skills {
+        margin-bottom: 20px;
+    }
+
+    .menu {
+        position: absolute;
+        visibility: visible;
+        top: 15px;
+        left: 10px;
+        width: 30px;
+        height: 30px;
+        list-style: none;
+        z-index: 99;
+    }
+
+    .menu li {
+        position: absolute;
+        background-color: black;
+        width: 30px;
+        height: 2px;
+    }
+
+    .menu li:nth-child(2){
+        top: 7px;
+        
+    }
+
+    .menu li:nth-child(3){
+        top: 7px;
+        
+    }
+
+    .menu li:nth-child(4){
+        top: 14px;
+    }
+
+    .menu--active li:nth-child(2){
+        transition: 1s;
+        transform: rotate(45deg);
+    }
+    .menu--active li:nth-child(3){
+        transform: rotate(-45deg);
+        transition: 1s;
+    }
+
+    .menu--active li:nth-child(1),
+    .menu--active li:nth-child(4){
+        visibility: hidden;
+    }
+
+    .menu--active li:nth-child(2),
+    .menu--active li:nth-child(3){
+        background: #fff;
+    }
+
+    .left-block--active {
+        z-index: 98;
+        visibility: visible;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transition: 1.5s;
+    }
+}
+
